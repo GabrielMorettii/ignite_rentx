@@ -124,7 +124,15 @@
                   "content": {
                       "application/json": {
                           "schema": {
-                              "$ref": "#/definitions/Specification"
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            }
                           }
                       }
                   }
@@ -185,7 +193,30 @@
                   "content": {
                       "application/json": {
                           "schema": {
-                          "$ref":  "#/definitions/Car"
+                              "type": "object",
+                              "properties": {
+                                  "name": {
+                                      "type": "string"
+                                  },
+                                  "description": {
+                                      "type": "string"
+                                  },
+                                  "daily_rate": {
+                                      "type": "number"
+                                  },
+                                  "license_plate": {
+                                      "type": "string"
+                                  },
+                                  "fine_amount": {
+                                      "type": "number"
+                                  },
+                                  "brand": {
+                                      "type": "string"
+                                  },
+                                  "category_id": {
+                                      "type": "string"
+                                  }
+                              }
                           }
                       }
                   }
@@ -243,45 +274,6 @@
                   "201": { 
                       "description": "Created"
                   }
-              }
-          }
-      }
-  },
-  "definitions": {
-      "Specification": {
-          "type": "object",
-          "properties": {
-              "name": {
-                  "type": "string"
-              },
-              "description": {
-                  "type": "string"
-              }
-          }
-      },
-      "Car": {
-          "type": "object",
-          "properties": {
-              "name": {
-                  "type": "string"
-              },
-              "description": {
-                  "type": "string"
-              },
-              "daily_rate": {
-                  "type": "number"
-              },
-              "license_plate": {
-                  "type": "string"
-              },
-              "fine_amount": {
-                  "type": "number"
-              },
-              "brand": {
-                  "type": "string"
-              },
-              "category_id": {
-                  "type": "string"
               }
           }
       }
