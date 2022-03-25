@@ -173,3 +173,37 @@ yarn typeorm migration:run
 ```
 yarn typeorm migration:revert
 ```
+
+## Built With
+
+- [NodeJS](https://nodejs.org/en/) - Build the server
+- [AWS](https://aws.amazon.com/pt/) - IaaS used in the production
+- [GitHub](https://github.com/GabrielMorettii/ignite_rentx/actions) - CI + CD
+- [express](https://expressjs.com/) - Router of the Application
+- [postgreSQL](https://www.postgresql.org/) - Relational Database
+- [pm2](https://pm2.keymetrics.io/) - Process Manager used in the production
+- [dotenv](https://github.com/motdotla/dotenv) - Environment loader
+- [multer](https://github.com/expressjs/multer) - File Upload
+- [eslint](https://eslint.org/) - JS Linter and code style
+- [JEST](https://jestjs.io/) - Tests
+- [prettier](https://github.com/prettier/prettier) - Code formatter
+- [super-test](https://github.com/visionmedia/supertest) - Test HTTP requests
+
+## Support tools
+
+- [Amazon SES](https://aws.amazon.com/pt/ses/) - Email Provider
+- [Amazon S3](https://aws.amazon.com/pt/s3/) - Storage Service
+
+## Contributing
+
+You can send how many PR's do you want, I'll be glad to analyse and accept them! And if you have any question about the project...
+
+Email-me: gabrielmorettisilva@gmail.com
+
+Connect with me at [LinkedIn](https://www.linkedin.com/in/gabriel-morettii/)
+
+Thank you!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/GabrielMorettii/ignite_rentx/blob/main/LICENSE) file for details.
