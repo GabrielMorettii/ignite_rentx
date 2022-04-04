@@ -7,5 +7,8 @@ module.exports = {
   "entities": [`./dist/modules/**/infra/typeorm/entities/*.js`],
   "cli": {
     "migrationsDir": `./src/shared/infra/typeorm/migrations/`
+  },
+  "ssl": {
+    rejectUnauthorized: false
   }
 }
