@@ -7,5 +7,8 @@ module.exports = {
   "entities": [`./${process.env.MIGRATION_ENV}/modules/**/infra/typeorm/entities/*.js`],
   "cli": {
     "migrationsDir": `./src/shared/infra/typeorm/migrations`
+  },
+  "ssl": {
+    rejectUnauthorized: false
   }
 }
