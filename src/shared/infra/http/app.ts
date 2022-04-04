@@ -42,7 +42,7 @@ app.use(express.json());
 app.use('/avatar', express.static(`${upload.tmpFolder}/avatar`));
 app.use('/cars', express.static(`${upload.tmpFolder}/cars`));
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.use(cors());
 
 app.use(router);
