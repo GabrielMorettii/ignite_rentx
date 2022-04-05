@@ -11,5 +11,5 @@ const diskStorageProvider = {
 
 container.registerSingleton<IStorageProvider>(
   'StorageProvider',
-  diskStorageProvider.local
+  diskStorageProvider[process.env.DISK]
 );
