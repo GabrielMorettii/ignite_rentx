@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
       "title": "RentX Documentation",
-      "description": "This is an API Rent",
+      "description": "RentX is an RESTful API and was built  with typescript and javascript to serve as a Back-end of a car rental service.",
       "version": "1.0.0",
       "contact": {
           "email": "gabriel@moretti.com.br"
