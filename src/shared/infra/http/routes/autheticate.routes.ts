@@ -9,5 +9,8 @@ const refreshTokenController = new RefreshTokenController();
 
 authenticateRoutes.post('/sessions', authenticateUserController.handle);
 authenticateRoutes.post('/refresh-token', refreshTokenController.handle);
+authenticateRoutes.get('/', (req, res) => {
+  res.status(301).redirect('/docs');
+});
 
 export { authenticateRoutes };

@@ -5,6 +5,7 @@ import * as Sentry from '@sentry/node';
 import * as Tracing from '@sentry/tracing';
 import cors from 'cors';
 import express, { Request, Response, NextFunction } from 'express';
+import path from 'path';
 import 'express-async-errors';
 import swaggerUi from 'swagger-ui-express';
 
@@ -63,5 +64,11 @@ app.use(
     });
   }
 );
+
+app.use((req, res, next) => {
+  res
+    .status(404)
+    .sendFile(path.join(process.cwd(), 'public', 'views', '404.html'));
+});
 
 export { app };
