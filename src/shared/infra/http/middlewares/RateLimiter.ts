@@ -6,7 +6,11 @@ import AppError from '@shared/errors/AppError';
 
 const redisClient = redis.createClient({
   legacyMode: true,
-  url: process.env.REDIS_URL,
+  socket: {
+    host: process.env.REDIS_HOST,
+    port: Number(process.env.REDIS_PORT),
+    sessionTimeout: 20,
+  },
 });
 
 const limiter = new RateLimiterRedis({
