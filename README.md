@@ -188,6 +188,7 @@ yarn typeorm migration:revert
 - [JEST](https://jestjs.io/) - Tests
 - [prettier](https://github.com/prettier/prettier) - Code formatter
 - [super-test](https://github.com/visionmedia/supertest) - Test HTTP requests
+- [TSyringe](https://github.com/microsoft/tsyringe 'TSyringe') - Dependency Injection
 
 ## Support tools
 
